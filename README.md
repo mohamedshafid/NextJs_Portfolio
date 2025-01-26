@@ -1,4 +1,4 @@
-![image]("https://github.com/mohamedshafid/NextJs_Portfolio/blob/main/github_readme/Banner.png")
+![image](https://github.com/mohamedshafid/NextJs_Portfolio/blob/main/github_readme/Banner.png)
 # Portfolio Website
 
 Welcome to my personal portfolio website! 🎉  
