@@ -2,20 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+html{
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    min-height: 200vh;
+    overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background:rgba(128, 128, 128, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background:black;
+    border-radius:5px;
+}
+
+
+.animate{
+    animation:appear linear 2s;
+    animation-timeline: view();
+    animation-range:entry 0% ;
+}
+
+@layer components{
+    .line{
+        @apply w-full h-[1px] bg-black rounded-full mt-16 mb-16
+    }
+    .input{
+        @apply w-full h-5 bg-black/10 p-5 font-mono
+    }
+    .icons{
+        @apply bg-black/10 p-2 rounded-full
+    }
+}
+
+@layer utilities{
+
+    .navbar::after{
+        content:'';
+        position:absolute;
+        width:0%;
+        height:3px;
+        bottom:-5px;
+        left:0;
+        background:rgba(0,0,0,1);
+        border-radius:50%;
+        z-index:1;
+        transition: all 0.5s;
+    }
+    .navbar:hover::after{
+        width:100%;
+    }
+    .navbar:active::after{
+        width:100%;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
 }
