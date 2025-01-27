@@ -55,7 +55,7 @@ const Navbar = () => {
         height={30}
         width={30}
         alt="Menu"
-        className="object-fit flex sm:hidden"
+        className="object-fit flex sm:hidden cursor-pointer"
         onClick={() => setActiveMenu(!activeMenu)}
       />
       {activeMenu && (

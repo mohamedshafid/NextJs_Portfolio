@@ -11,7 +11,6 @@ body{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    min-height: 200vh;
     overflow-x: hidden;
 }
 
@@ -42,7 +41,7 @@ body{
         @apply w-full h-5 bg-black/10 p-5 font-mono
     }
     .icons{
-        @apply bg-black/10 p-2 rounded-full
+        @apply bg-black/10 p-2 rounded-full size-8 lg:size-10 
     }
 }
 

@@ -13,7 +13,7 @@ const Profile = () => {
           className="rounded-lg"
         />
       </div>
-      <h1 className="font-bold text-3xl text-center">Mohamed Hafid</h1>
+      <h1 className="font-bold text-3xl text-center mt-6">Mohamed Hafid</h1>
       <h2 className="font-medium text-[18px] text-center">
         Full stack Developer
       </h2>

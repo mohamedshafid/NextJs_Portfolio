@@ -27,24 +27,24 @@ const Techonologies = () => {
         expertise ensures seamless integration of frontend and backend for a
         smooth user experience.
       </p>
-      <div className="flex flex-col items-center gap-10 mt-5 px-3">
-        <div className="flex flex-row gap-3 flex-shrink flex-grow">
-          <FaHtml5 size={40} className="icons" />
-          <FaCss3 size={40} className="icons" />
-          <IoLogoJavascript size={40} className="icons" />
-          <FaReact size={40} className="icons" />
-          <SiExpress size={40} className="icons" />
-          <DiMongodb size={40} className="icons" />
-          <RiNextjsFill size={40} className="icons" />
-          <FaFlutter size={40} className="icons" />
-          <SiMysql size={40} className="icons" />
+      <div className="flex flex-col items-center gap-10 mt-5 lg:px-3 px-1">
+        <div className="flex flex-row gap-1 lg:gap-4 flex-grow">
+          <FaHtml5 className="icons" />
+          <FaCss3 className="icons" />
+          <IoLogoJavascript className="icons" />
+          <FaReact className="icons" />
+          <SiExpress className="icons" />
+          <DiMongodb className="icons" />
+          <RiNextjsFill className="icons" />
+          <FaFlutter className="icons" />
+          <SiMysql className="icons" />
         </div>
-        <div className="flex flex-row gap-3">
-          <FaPython size={40} className="icons" />
-          <FaJava size={40} className="icons" />
-          <FaDocker size={40} className="icons" />
-          <BiLogoPostgresql size={40} className="icons" />
-          <FaGithub size={40} className="icons" />
+        <div className="flex flex-row gap-1 lg:gap-4">
+          <FaPython className="icons" />
+          <FaJava className="icons" />
+          <FaDocker className="icons" />
+          <BiLogoPostgresql className="icons" />
+          <FaGithub className="icons" />
         </div>
       </div>
     </section>
