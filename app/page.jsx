@@ -1,6 +1,13 @@
 import { Details, Navbar, Profile } from "@/components";
 import { Suspense } from "react";
 import Loading from "./loading";
+
+export const metadata = {
+  title: "Mohamed Hafid | Portfolio",
+  description: "My personal portfolio",
+  manifest: "/web.manifest",
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen w-full">

@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio Website",
+  "short_name": "Portfolio Website",
+  "description": "My portfolio website which works also in offile mode",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+  
+  ]
+}

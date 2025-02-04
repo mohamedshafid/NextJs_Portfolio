@@ -1,12 +1,26 @@
+"use client";
+import React from "react";
 import "./globals.css";
-import { ToastContainer} from "react-toastify";
-
-export const metadata = {
-  title: "Mohamed Hafid | Portfolio",
-  description: "My personal portfolio",
-};
+import { ToastContainer } from "react-toastify";
 
 export default function RootLayout({ children }) {
+  React.useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      console.log("Service Worker registration in progress");
+      navigator.serviceWorker
+        .register("/service-worker.js")
+        .then((registration) => {
+          console.log(
+            "Service Worker registered with scope:",
+            registration.scope
+          );
+        })
+        .catch((error) => {
+          console.error("Service Worker registration failed:", error);
+        });
+    }
+  }, []);
+
   return (
     <html lang="en">
       <head>
