@@ -18,7 +18,7 @@ const Profile = () => {
         Full stack Developer
       </h2>
       <button className="bg-black text-white px-4 py-2 rounded-lg mt-5 mx-auto">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View My Resume</a>
+        <a href="/MyResume.pdf" target="_blank" rel="noopener noreferrer">View My Resume</a>
       </button>
     </section>
   );
