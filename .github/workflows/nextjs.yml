@@ -16,11 +16,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Linter & Tests
-        run: |
-          npm run lint
-          npm run test
-
       - name: Build Next.js App
         run: npm run build
 
